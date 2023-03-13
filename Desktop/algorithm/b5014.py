@@ -2,7 +2,8 @@ import sys
 from collections import deque
 sys.stdin = open('input.txt')
 F, S, G, U, D = map(int, input().split())
-visited = [False for _ in range(F + 1)]
+visited = [[False] for _ in range(F + 1)]
+ # 가지치기 필요
 
 
 queue = deque([S])
